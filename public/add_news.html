@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style_for_add_news.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>News</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="add_news.html">Create News</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="add-news-form" action="/add_news" method="POST">
+            <h1>Add News</h1>
+            <label for="title">Заголовок:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="content">Описание:</label>
+            <textarea id="content" name="content" required></textarea>
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="timestamp"></label>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 News. All rights reserved.</p>
+    </footer>
+
+</body>
+<script src="createData.js"></script>
+
+</html>
